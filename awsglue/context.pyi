@@ -5,7 +5,6 @@ from awsglue.dynamicframe import DynamicFrame as DynamicFrame, DynamicFrameColle
 from awsglue.gluetypes import DataType as DataType
 from awsglue.streaming_data_source import StreamingDataSource as StreamingDataSource
 from awsglue.utils import callsite as callsite, makeOptions as makeOptions
-from py4j.java_gateway import JavaClass as JavaClass
 from pyspark.sql import SQLContext
 from pyspark.sql.utils import StreamingQueryException as StreamingQueryException
 from typing import Any

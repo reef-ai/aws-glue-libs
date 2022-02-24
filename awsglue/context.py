@@ -27,7 +27,6 @@ import pyspark
 import os
 import re
 import uuid
-from py4j.java_gateway import JavaClass
 import time
 import logging
 
