@@ -1,0 +1,9 @@
+from awsglue.dynamicframe import DynamicFrame as DynamicFrame
+from awsglue.utils import callsite as callsite, makeOptions as makeOptions
+from typing import Any
+
+class DataSource:
+    name: Any
+    def __init__(self, j_source, sql_ctx, name) -> None: ...
+    def setFormat(self, format, **options) -> None: ...
+    def getFrame(self, **options): ...
