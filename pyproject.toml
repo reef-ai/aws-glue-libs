@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aws-glue-libs"
+version = "3.0.0"
+description = "This repository supports python libraries for local development of glue pyspark batch jobs. Glue streaming is not supported with this library."
+authors = ["Amazon"]
+license = "Amazon Software License"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyspark = "^3.2.1"
+
+[tool.poetry.dev-dependencies]
+types-requests = "^2.27.11"
+mypy = "^0.931"
+boto3-stubs = "^1.21.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
