@@ -1,6 +1,8 @@
+from awsglue import DynamicFrame
+
 class ApplyMapping:
     @staticmethod
-    def apply(frame, mappings): ...
+    def apply(frame: DynamicFrame, mappings: list[tuple[str, str, str, str]]) -> DynamicFrame: ...
     @classmethod
     def describeArgs(cls): ...
     @classmethod
